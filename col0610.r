@@ -17,7 +17,7 @@ library(seqinr)
 
 remove(frame1, frame2, frame3, frame4, frame5, frame6, genome)
 
-genome = "C:/Users/wlodz/Desktop/chr8cen.fasta"
+genome = "C:/Users/wlodz/Desktop/t2t-col.20210610.fasta"
 
 time1 = Sys.time()
 frame1 = identify.repetitive.regions(fastaDirectory = genome, kmer = 10, window = 1000, threshold = 10, filter.small = 3500)
@@ -41,7 +41,7 @@ d = Sys.time() - time4
 
 frame7 = frame4[,-c(6)]
 
-write.csv(x = frame7, file = "frame7col0601.csv", quote = FALSE)
+write.csv(x = frame7, file = "frame7col0610.csv", quote = FALSE)
 
 a
 b
